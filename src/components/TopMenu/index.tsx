@@ -7,7 +7,7 @@ import "./styles.css";
 export const TopMenu = () => {
   const [activeLink, setActiveLink] = useState("#HERO_SECTION");
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [isScrolling, setIsScrolling] = useState(false);
+  // const [isScrolling, setIsScrolling] = useState(false);
   const handleLinkClick = (href: string) => {
     setActiveLink(href);
     setToggleMenu(false);
@@ -17,7 +17,7 @@ export const TopMenu = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      setIsScrolling(true);
+      // setIsScrolling(true);
       const offsetPosition = element.offsetTop;
 
       window.scrollTo({
@@ -26,7 +26,7 @@ export const TopMenu = () => {
       });
 
       setTimeout(() => {
-        setIsScrolling(false);
+        // setIsScrolling(false);
       }, 500);
     }
   };
