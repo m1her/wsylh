@@ -62,7 +62,7 @@ export const HeroSection = () => {
             ونموذج الإجابات .
           </div>
           <div className="w-full flex gap-10 items-center lg:justify-end lg:pe-20 md:justify-start justify-center">
-            <button className="px-12 md:py-4 py-3 whitespace-nowrap text-primary bg-white rounded-full md:text-xl text-lg font-bold shadow-[0_0_10px_5px_rgba(88,184,254,0.4)] hover:bg-blue-50 transition-all duration-200 ease-linear">
+            <button className="px-12 md:py-4 py-3 whitespace-nowrap text-primary bg-white rounded-full md:text-xl text-lg font-bold shadow-[0_0_10px_5px_rgba(88,184,254,0.4)] hover:bg-primary hover:text-white border-2 border-primary hover:border-white transition-all duration-200 ease-linear">
               ابدأ الآن
             </button>
             <Link
