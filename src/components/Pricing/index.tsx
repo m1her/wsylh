@@ -38,7 +38,7 @@ export const Pricing = () => {
           </div>
           <Link
             href={"https://exams.wsyelhi.com/register"}
-            className="px-8 md:py-3 py-2.5 rounded-full text-white md:font-bold font-semibold md:text-xl text-lg bg-acctext-accent hover:text-white hover:bg-[#c94d4d] transition-colors duration-200"
+            className="px-8 md:py-3 py-2.5 rounded-full text-white md:font-bold font-semibold md:text-xl text-lg bg-accent hover:text-white hover:bg-[#c94d4d] transition-colors duration-200"
           >
             اشترك الآن
           </Link>
