@@ -5,11 +5,30 @@ import React, { useState } from "react";
 import "./styles.css";
 
 export const TopMenu = () => {
-  const [activeLink, setActiveLink] = useState("#main"); // Default active link
+  const [activeLink, setActiveLink] = useState("#HERO_SECTION");
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
   const handleLinkClick = (href: string) => {
     setActiveLink(href);
     setToggleMenu(false);
+    scrollToSection(href);
+  };
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      setIsScrolling(true);
+      const offsetPosition = element.offsetTop;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+      setTimeout(() => {
+        setIsScrolling(false);
+      }, 500);
+    }
   };
 
   return (
@@ -40,32 +59,25 @@ export const TopMenu = () => {
         style={{ width: toggleMenu ? "100vw" : "0vw" }}
       >
         <Link
-          href="#main"
-          className={`${activeLink === "#main" ? "active" : ""} md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("#main")}
+          href="#"
+          className={`${
+            activeLink === "HERO_SECTION" ? "active" : ""
+          } md:ms-0 ms-10`}
+          onClick={() => handleLinkClick("HERO_SECTION")}
         >
           الرئيسية
         </Link>
         <Link
-          href="#services"
+          href="#"
           className={`${
-            activeLink === "#services" ? "active" : ""
+            activeLink === "SERVICE_SECTION" ? "active" : ""
           } md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("#services")}
+          onClick={() => handleLinkClick("SERVICE_SECTION")}
         >
           خدماتنا
         </Link>
         <Link
-          href="#applications"
-          className={`${
-            activeLink === "#applications" ? "active" : ""
-          } md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("#applications")}
-        >
-          التطبيقات
-        </Link>
-        <Link
-          href="#about_us"
+          href="#"
           className={`${
             activeLink === "#about_us" ? "active" : ""
           } md:ms-0 ms-10`}
@@ -74,7 +86,16 @@ export const TopMenu = () => {
           من نحن
         </Link>
         <Link
-          href="#prices"
+          href="#"
+          className={`${
+            activeLink === "#applications" ? "active" : ""
+          } md:ms-0 ms-10`}
+          onClick={() => handleLinkClick("#applications")}
+        >
+          تطبيقاتنا
+        </Link>
+        <Link
+          href="#"
           className={`${
             activeLink === "#prices" ? "active" : ""
           } md:ms-0 ms-10`}
@@ -83,7 +104,7 @@ export const TopMenu = () => {
           الأسعار
         </Link>
         <Link
-          href="#questions"
+          href="#"
           className={`${
             activeLink === "#questions" ? "active" : ""
           } md:ms-0 ms-10`}

@@ -4,7 +4,7 @@ import React from "react";
 
 export const HeroSection = () => {
   return (
-    <section className="w-full h-fit relative md:px-14 px-10">
+    <section id="HERO_SECTION" className="w-full min-h-screen relative md:px-14 px-10">
       <Image
         src={"/wave.svg"}
         alt={"Waves"}
