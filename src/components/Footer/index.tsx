@@ -3,8 +3,8 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="w-full flex justify-center items-center md:px-14 px-10 py-12 bg-white">
-      <p className="text-lg font-medium">
+    <div className="w-full text-center flex justify-center items-center md:px-14 px-10 py-12 bg-white">
+      <p className="md:text-lg text-base font-medium">
         جميع الحقوق محفوظة لمتجر
         <Link
           href={"https://wsyelh.com/"}
