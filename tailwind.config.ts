@@ -11,6 +11,10 @@ const config: Config = {
       fontFamily: {
         cairo: ["var(--font-cairo)"],
       },
+      colors: {
+        primary: "#3c5097",
+        secondary: "#58b8fe",
+      },
     },
   },
   plugins: [],
