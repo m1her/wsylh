@@ -16,7 +16,7 @@ export const TopMenu = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center md:px-14 px-10 py-2 bg-white sticky top-0 left-0 z-50">
+    <nav className="flex justify-between items-center md:px-14 px-10 py-2 bg-white sticky top-0 left-0 z-[100]">
       <div className="flex gap-x-4">
         <Image
           src={"/icons/bars.svg"}

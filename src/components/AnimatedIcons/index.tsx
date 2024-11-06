@@ -12,6 +12,9 @@ import { VisaIcon } from "./Payment/Visa";
 import { AppGalleryIcon } from "./Applications/AppGallery";
 import { AppStoreIcon } from "./Applications/AppStore";
 import { GooglePlayIcon } from "./Applications/GooglePaly";
+import { MessagesIcon } from "./Messages";
+import { PlayIcon } from "./Play";
+import { UserIcon } from "./User";
 
 export {
   AddUserIcon,
@@ -28,4 +31,7 @@ export {
   AppGalleryIcon,
   AppStoreIcon,
   GooglePlayIcon,
+  MessagesIcon,
+  PlayIcon,
+  UserIcon,
 };
