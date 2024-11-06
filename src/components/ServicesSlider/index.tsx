@@ -16,7 +16,7 @@ export const ServicesSlider = () => {
       }
     }, 3000);
     return () => clearInterval(interval);
-  }, [isAnimating, servicesSliderData.length]);
+  }, [isAnimating]);
 
   const bullitHandler = (idx: number) => {
     setCurrentIndex(idx);
