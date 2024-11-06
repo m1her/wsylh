@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import "./styles.css";
 import { AddUserIcon, LoginIcon } from "../AnimatedIcons";
-import { usePathname } from 'next/navigation'
+// import { usePathname } from 'next/navigation'
 
 export const TopMenu = () => {
   const [activeLink, setActiveLink] = useState("MAIN");
