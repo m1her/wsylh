@@ -6,7 +6,7 @@ import { questions } from "./questionsData";
 export const FAQ = () => {
   const [OpenedId, setOpenedId] = useState(0);
   return (
-    <div className="md:px-14 px-10 py-12 bg-white">
+    <section id="QUESTIONS_SECTION" className="md:px-14 px-10 py-12 bg-white">
       <div className="w-full flex flex-col items-center gap-6">
         <div className="md:text-4xl text-3xl font-semibold">أسئلة شائعة</div>
         <div className="md:w-1/2 text-center md:text-xl text-lg text-gray-400">
@@ -41,6 +41,6 @@ export const FAQ = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         cairo: ["var(--font-cairo)"],
+        kufi: ["var(--font-kufi)"],
       },
       colors: {
         primary: "#3c5097",

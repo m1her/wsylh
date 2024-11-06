@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { Cairo } from "next/font/google";
+import { Cairo, Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
+import { TopMenu } from "@/components/TopMenu";
+import { Footer } from "@/components/Footer";
+import { Whatsapp } from "@/components/Whatsapp";
 
 export const metadata: Metadata = {
   title: "WSYLH | وسيلة",
@@ -8,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const cairo = Cairo({ subsets: ["arabic"], variable: "--font-cairo" });
+const kufi = Noto_Kufi_Arabic({ subsets: ["arabic"], variable: "--font-kufi" });
 
 export default function RootLayout({
   children,
@@ -16,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="rtl">
-      <body className={`${cairo.variable}`}>{children}</body>
+      <body className={`${cairo.variable} ${kufi.variable}`}>
+        <TopMenu />
+        {children}
+        <Footer />
+        <Whatsapp />
+      </body>
     </html>
   );
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 export const Pricing = () => {
   return (
-    <div className="w-full md:px-14 px-10 md:py-12 py-10 md:bg-gradient-to-r bg-gradient-to-t from-primary to-secondary from-40% to-80% grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-12">
+    <section id="PRICING_SECTION" className="w-full md:px-14 px-10 md:py-12 py-10 md:bg-gradient-to-r bg-gradient-to-t from-primary to-secondary from-40% to-80% grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-12">
       <div className="w-full h-full">
         <Image
           src={"/discount.svg"}
@@ -44,6 +44,6 @@ export const Pricing = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

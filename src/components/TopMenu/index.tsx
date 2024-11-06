@@ -3,32 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import "./styles.css";
+import { AddUserIcon, LoginIcon } from "../AnimatedIcons";
+import { usePathname } from 'next/navigation'
 
 export const TopMenu = () => {
-  const [activeLink, setActiveLink] = useState("#HERO_SECTION");
+  const [activeLink, setActiveLink] = useState("MAIN");
   const [toggleMenu, setToggleMenu] = useState(false);
-  // const [isScrolling, setIsScrolling] = useState(false);
+
   const handleLinkClick = (href: string) => {
     setActiveLink(href);
     setToggleMenu(false);
-    scrollToSection(href);
-  };
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      // setIsScrolling(true);
-      const offsetPosition = element.offsetTop;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-
-      setTimeout(() => {
-        // setIsScrolling(false);
-      }, 500);
-    }
   };
 
   return (
@@ -39,7 +23,7 @@ export const TopMenu = () => {
           width={25}
           height={25}
           alt={"bars icon"}
-          className="md:hidden z-50 cursor-pointer md:w-auto w-6"
+          className="lg:hidden z-50 cursor-pointer lg:w-auto w-6"
           onClick={() => setToggleMenu((prev) => !prev)}
         />
         <Image
@@ -52,73 +36,78 @@ export const TopMenu = () => {
       </div>
 
       <div
-        className={`flex md:static overflow-hidden fixed top-0 md:start-auto start-0 md:pt-0 pt-24 bg-white h-full z-40 md:flex-row flex-col md:items-center items-start gap-y-8 lg:gap-x-6 md:gap-x-4 font-normal lg:text-lg text-base md:!w-fit w-full
+        className={`flex lg:static overflow-hidden fixed lg:h-full gap-y-8 h-screen top-0 lg:start-auto start-0 lg:pt-0 pt-24 bg-white z-40 lg:flex-row flex-col lg:items-center items-start font-normal lg:text-lg text-base lg:!w-full w-full
             transition-[width] duration-500 ease-in-out
             ${toggleMenu ? "" : "px-0"}
             `}
         style={{ width: toggleMenu ? "100vw" : "0vw" }}
       >
-        <Link
-          href="#"
-          className={`${
-            activeLink === "HERO_SECTION" ? "active" : ""
-          } md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("HERO_SECTION")}
-        >
-          الرئيسية
-        </Link>
-        <Link
-          href="#"
-          className={`${
-            activeLink === "SERVICE_SECTION" ? "active" : ""
-          } md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("SERVICE_SECTION")}
-        >
-          خدماتنا
-        </Link>
-        <Link
-          href="#"
-          className={`${
-            activeLink === "#about_us" ? "active" : ""
-          } md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("#about_us")}
-        >
-          من نحن
-        </Link>
-        <Link
-          href="#"
-          className={`${
-            activeLink === "#applications" ? "active" : ""
-          } md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("#applications")}
-        >
-          تطبيقاتنا
-        </Link>
-        <Link
-          href="#"
-          className={`${
-            activeLink === "#prices" ? "active" : ""
-          } md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("#prices")}
-        >
-          الأسعار
-        </Link>
-        <Link
-          href="#"
-          className={`${
-            activeLink === "#questions" ? "active" : ""
-          } md:ms-0 ms-10`}
-          onClick={() => handleLinkClick("#questions")}
-        >
-          أسئلة شائعة
-        </Link>
-        <Link
-          href="https://api.whatsapp.com/send/?phone=966553576290&text&type=phone_number&app_absent=0"
-          className="md:ms-0 ms-10"
-        >
-          اتصل بنا
-        </Link>
+        <div className="lg:ms-auto flex gap-y-8 lg:gap-x-8 lg:flex-row flex-col lg:items-center items-start">
+          <Link
+            href="/"
+            className={`link ${
+              activeLink === "MAIN" ? "active" : ""
+            } lg:ms-0 ms-10`}
+            onClick={() => handleLinkClick("MAIN")}
+          >
+            الرئيسية
+          </Link>
+          <Link
+            href="/create-exam"
+            className={`link ${
+              activeLink === "CREATE_EXAM" ? "active" : ""
+            } lg:ms-0 ms-10`}
+            onClick={() => handleLinkClick("CREATE_EXAM")}
+          >
+            إعداد اختبار
+          </Link>
+          <Link
+            href="our-services"
+            className={`link ${
+              activeLink === "SERVICES" ? "active" : ""
+            } lg:ms-0 ms-10`}
+            onClick={() => handleLinkClick("SERVICES")}
+          >
+            خدماتنا
+          </Link>
+          <Link
+            href="help"
+            className={`link ${
+              activeLink === "HELP" ? "active" : ""
+            } lg:ms-0 ms-10`}
+            onClick={() => handleLinkClick("HELP")}
+          >
+            مساعدة
+          </Link>
+        </div>
+
+        <div className="flex md:gap-x-6 gap-x-4 lg:ms-auto ms-10">
+          <Link
+            href=""
+            className="flex whitespace-nowrap items-center gap-x-2 md:px-6 px-4 md:py-3 py-2 border border-black bg-white hover:bg-primary hover:text-white font-semibold hover:border-primary rounded-md text-sm transition-colors duration-150 group"
+          >
+            تسجيل الدخول
+            <LoginIcon className="w-5 stroke-black group-hover:stroke-white transition-colors duration-150" />
+          </Link>
+          <Link
+            href=""
+            className="flex whitespace-nowrap items-center gap-x-2 md:px-6 px-4 md:py-3 py-2 bg-primary text-white font-semibold hover:bg-[#2a3a76] rounded-md text-sm transition-colors duration-150"
+          >
+            إنشاء حساب
+            <AddUserIcon className="w-5 stroke-white" />
+          </Link>
+        </div>
       </div>
     </nav>
   );
 };
+
+{
+  /* 
+        <Link
+          href="https://api.whatsapp.com/send/?phone=966553576290&text&type=phone_number&app_absent=0"
+          className="md:ms-0 ms-10 link"
+        >
+          اتصل بنا
+        </Link> */
+}
