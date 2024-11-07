@@ -26,7 +26,8 @@ const Help = () => {
             </p>
           </Link>
           <Link
-            href={""}
+            href={"https://youtu.be/pmbn-EdSnxI"}
+            target="_blank"
             className="lg:w-72 lg:h-72 md:w-52 md:h-52 w-28 h-28 bg-white hover:bg-[#fdfdff] hover:scale-[1.02] transition-all duration-150 flex flex-col md:gap-4 gap-1 items-center justify-center rounded-lg border border-gray-300 shadow-[0_0_10px_5px_rgba(0,0,0,0.1)]"
           >
             <PlayIcon className="lg:w-24 lg:h-24 md:w-16 md:h-16 w-8 h-8 fill-secondary" />

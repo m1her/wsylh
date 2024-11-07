@@ -14,7 +14,7 @@ export const ServicesSlider = () => {
           (prevIndex) => (prevIndex + 1) % servicesSliderData.length
         );
       }
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [isAnimating]);
 

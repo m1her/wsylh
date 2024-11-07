@@ -30,7 +30,7 @@ export const SlideCard = ({
             </Link>
           </div>
         </div>
-        <div className="w-full lg:aspect-auto md:aspect-[5/2] aspect-square object-cover object-center relative rounded-xl overflow-hidden shadow-[10px_0_20px_0px_rgba(0,0,0,0.2)]">
+        <div className="w-full lg:min-h-[450px] lg:aspect-auto md:aspect-[5/2] aspect-square object-cover object-center relative rounded-xl overflow-hidden shadow-[10px_0_20px_0px_rgba(0,0,0,0.2)]">
           <Image src={imageHref} alt={"title"} fill />
         </div>
       </div>

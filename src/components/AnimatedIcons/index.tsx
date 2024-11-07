@@ -6,15 +6,18 @@ import { FilePenIcon } from "./FilePen";
 import { BoltIcon } from "./Bolt";
 import { GearsIcon } from "./Gears";
 import { SitemapIcon } from "./Sitemap";
-import { PayPalIcon } from "./Payment/PayPal";
-import { MasterCardIcon } from "./Payment/MasterCard";
 import { VisaIcon } from "./Payment/Visa";
+import { MadaIcon } from "./Payment/Mada";
+import { ApplePayIcon } from "./Payment/ApplePay";
 import { AppGalleryIcon } from "./Applications/AppGallery";
 import { AppStoreIcon } from "./Applications/AppStore";
 import { GooglePlayIcon } from "./Applications/GooglePaly";
 import { MessagesIcon } from "./Messages";
 import { PlayIcon } from "./Play";
 import { UserIcon } from "./User";
+import { PlusIcon } from "./Plus";
+import { SaudiBC } from "./SaudiBC";
+import { StarIcon } from "./Star";
 
 export {
   AddUserIcon,
@@ -26,12 +29,15 @@ export {
   GearsIcon,
   SitemapIcon,
   VisaIcon,
-  MasterCardIcon,
-  PayPalIcon,
   AppGalleryIcon,
   AppStoreIcon,
   GooglePlayIcon,
   MessagesIcon,
   PlayIcon,
   UserIcon,
+  PlusIcon,
+  MadaIcon,
+  ApplePayIcon,
+  SaudiBC,
+  StarIcon,
 };

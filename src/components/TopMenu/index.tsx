@@ -3,15 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import "./styles.css";
-import { AddUserIcon, LoginIcon } from "../AnimatedIcons";
-// import { usePathname } from 'next/navigation'
+import { LoginIcon, PlusIcon } from "../AnimatedIcons";
+import { usePathname } from "next/navigation";
 
 export const TopMenu = () => {
-  const [activeLink, setActiveLink] = useState("MAIN");
   const [toggleMenu, setToggleMenu] = useState(false);
+  const pathname = usePathname();
 
-  const handleLinkClick = (href: string) => {
-    setActiveLink(href);
+  const handleLinkClick = () => {
     setToggleMenu(false);
   };
 
@@ -45,37 +44,29 @@ export const TopMenu = () => {
         <div className="lg:ms-auto flex gap-y-8 lg:gap-x-8 lg:flex-row flex-col lg:items-center items-start">
           <Link
             href="/"
-            className={`link ${
-              activeLink === "MAIN" ? "active" : ""
-            } lg:ms-0 ms-10`}
-            onClick={() => handleLinkClick("MAIN")}
+            className={`link ${pathname === "/" ? "active" : ""} lg:ms-0 ms-10`}
+            onClick={() => handleLinkClick()}
           >
             الرئيسية
           </Link>
-          <Link
-            href="/create-exam"
-            className={`link ${
-              activeLink === "CREATE_EXAM" ? "active" : ""
-            } lg:ms-0 ms-10`}
-            onClick={() => handleLinkClick("CREATE_EXAM")}
-          >
+          <Link href="/" className={`link lg:ms-0 ms-10`}>
             إعداد اختبار
           </Link>
           <Link
             href="our-services"
             className={`link ${
-              activeLink === "SERVICES" ? "active" : ""
+              pathname === "/our-services" ? "active" : ""
             } lg:ms-0 ms-10`}
-            onClick={() => handleLinkClick("SERVICES")}
+            onClick={() => handleLinkClick()}
           >
             خدماتنا
           </Link>
           <Link
             href="help"
             className={`link ${
-              activeLink === "HELP" ? "active" : ""
+              pathname === "/help" ? "active" : ""
             } lg:ms-0 ms-10`}
-            onClick={() => handleLinkClick("HELP")}
+            onClick={() => handleLinkClick()}
           >
             مساعدة
           </Link>
@@ -93,21 +84,11 @@ export const TopMenu = () => {
             href=""
             className="flex whitespace-nowrap items-center gap-x-2 md:px-6 px-4 md:py-3 py-2 bg-primary text-white font-semibold hover:bg-[#2a3a76] rounded-md text-sm transition-colors duration-150"
           >
-            إنشاء حساب
-            <AddUserIcon className="w-5 stroke-white" />
+            للإشتراك
+            <PlusIcon className="w-5 stroke-white" />
           </Link>
         </div>
       </div>
     </nav>
   );
 };
-
-{
-  /* 
-        <Link
-          href="https://api.whatsapp.com/send/?phone=966553576290&text&type=phone_number&app_absent=0"
-          className="md:ms-0 ms-10 link"
-        >
-          اتصل بنا
-        </Link> */
-}
