@@ -32,6 +32,7 @@ export const TopMenu = () => {
           alt={"Website Logo"}
           className="z-50 md:w-[150px] w-36 md:h-auto h-auto"
           priority
+          loading="eager"
         />
       </div>
 
