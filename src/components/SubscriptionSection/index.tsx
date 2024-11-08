@@ -7,7 +7,7 @@ import "./styles.css";
 export const SubscriptionSection = () => {
   return (
     <div className="grid xl:grid-cols-3 grid-cols-1 h-full items-start gap-8 xl:w-full">
-      <div className="animate-soonSubCard xl:order-1 order-2 h-full flex flex-col items-center-center relative overflow-hidden shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg flex-shrink-0">
+      <div className="animate-soonSubCard xl:order-1 order-2 h-full flex flex-col items-center-center relative shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg flex-shrink-0">
         <div className="absolute select-none top-3 -end-12 bg-white text-accent text-2xl font-semibold z-20 text-center px-16 py-3 rounded shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] -rotate-45">
           قريبا
         </div>
@@ -60,7 +60,7 @@ export const SubscriptionSection = () => {
           ))}
         </div>
       </div>
-      <div className="animate-soonSubCard order-3 h-full flex flex-col items-center-center relative overflow-hidden shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg flex-shrink-0">
+      <div className="animate-soonSubCard order-3 h-full flex flex-col items-center-center relative shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg flex-shrink-0">
         <div className="absolute select-none top-3 -end-12 bg-white text-accent text-2xl font-semibold z-20 text-center px-16 py-3 rounded shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] -rotate-45">
           قريبا
         </div>
