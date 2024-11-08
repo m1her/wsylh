@@ -1,0 +1,38 @@
+.gpst0 {
+  fill: #a6a6a6;
+}
+.gpst1 {
+  stroke: #ffffff;
+  stroke-width: 0.2;
+  stroke-miterlimit: 10;
+}
+.gpst1,
+.gpst2 {
+  fill: #fff;
+}
+.gpst3 {
+  fill: url(#SVGID_1_);
+}
+.gpst4 {
+  fill: url(#SVGID_2_);
+}
+.gpst5 {
+  fill: url(#SVGID_3_);
+}
+.gpst6 {
+  fill: url(#SVGID_4_);
+}
+.gpst7,
+.gpst8,
+.gpst9 {
+  opacity: 0.2;
+  enable-background: new;
+}
+.gpst8,
+.gpst9 {
+  opacity: 0.12;
+}
+.gpst9 {
+  opacity: 0.25;
+  fill: #fff;
+}

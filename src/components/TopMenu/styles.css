@@ -1,0 +1,11 @@
+.link {
+  @apply cursor-pointer hover:text-primary transition-all duration-150 ease-linear whitespace-nowrap;
+}
+
+.link.active {
+  @apply font-semibold text-primary;
+}
+
+.add-user{
+  @apply fill-white w-16
+}
