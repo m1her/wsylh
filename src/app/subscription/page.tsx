@@ -35,7 +35,7 @@ const Subscription = () => {
           </div>
         </div>
 
-        <div className="z-50 flex flex-col -mt-56 items-center gap-6 w-full md:py-10 py-8 md:px-14 px-10">
+        <div className="z-50 flex flex-col -mt-56 items-center gap-6 w-full h-full md:py-10 py-8 md:px-14 px-10">
           <SubscriptionSection />
         </div>
       </div>

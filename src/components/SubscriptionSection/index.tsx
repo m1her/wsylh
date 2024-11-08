@@ -7,7 +7,7 @@ import "./styles.css";
 export const SubscriptionSection = () => {
   return (
     <div className="grid xl:grid-cols-3 grid-cols-1 h-full items-start gap-8 xl:w-full">
-      <div className="animate-soonSubCard xl:order-1 order-2 h-full flex flex-col items-center-center relative overflow-hidden shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg">
+      <div className="animate-soonSubCard xl:order-1 order-2 h-full flex flex-col items-center-center relative overflow-hidden shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg flex-shrink-0">
         <div className="absolute select-none top-3 -end-12 bg-white text-accent text-2xl font-semibold z-20 text-center px-16 py-3 rounded shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] -rotate-45">
           قريبا
         </div>
@@ -16,7 +16,7 @@ export const SubscriptionSection = () => {
           <div className="w-0 h-0 border-l-[80px] border-r-[80px] border-t-[40px] border-transparent border-t-white"></div>
           <div className="md:text-5xl text-4xl font-light text-white -mt-2 flex justify-between items-end w-full">
             <div>الأساسية</div>
-            <div className="md:text-xl text-lg font-semibold">30 ريال</div>
+            <div className="md:text-xl text-base font-semibold">30 ريال</div>
           </div>
           <Link
             href={"#"}
@@ -39,7 +39,7 @@ export const SubscriptionSection = () => {
           <div className="w-0 h-0 border-l-[80px] border-r-[80px] border-t-[40px] border-transparent border-t-white"></div>
           <div className="md:text-5xl text-4xl font-light gap-2 text-white -mt-2 flex justify-between items-end w-full">
             <div>الفضية</div>
-            <div className="md:text-xl text-lg font-semibold flex flex-col items-end">
+            <div className="md:text-xl text-base font-semibold flex flex-col items-end">
               <div className="line-through">99 ريال</div>
               <div>لفترة محدودة 59 ريال</div>
             </div>
@@ -60,7 +60,7 @@ export const SubscriptionSection = () => {
           ))}
         </div>
       </div>
-      <div className="animate-soonSubCard order-3 h-full flex flex-col items-center-center relative overflow-hidden shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg">
+      <div className="animate-soonSubCard order-3 h-full flex flex-col items-center-center relative overflow-hidden shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg flex-shrink-0">
         <div className="absolute select-none top-3 -end-12 bg-white text-accent text-2xl font-semibold z-20 text-center px-16 py-3 rounded shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] -rotate-45">
           قريبا
         </div>
@@ -69,7 +69,7 @@ export const SubscriptionSection = () => {
           <div className="w-0 h-0 border-l-[80px] border-r-[80px] border-t-[40px] border-transparent border-t-white"></div>
           <div className="md:text-5xl text-4xl font-light text-white -mt-2 flex justify-between items-end w-full">
             <div>الذهبية</div>
-            <div className="md:text-xl text-lg font-semibold">230 ريال</div>
+            <div className="md:text-xl text-base font-semibold">230 ريال</div>
           </div>
           <Link
             href={"#"}
