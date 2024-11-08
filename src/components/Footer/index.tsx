@@ -46,7 +46,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <Image src={"/Logo.png"} alt={"Logo"} width={150} height={50} />
+          <Image src={"/Logo.png"} alt={"Wsylh logo"} width={150} height={50} />
           <div className="w-full flex justify-center">
             <Link
               className="md:w-52 md:h-20 w-40 h-14 shadow-[0_0_7px_-1px_rgba(0,0,0,0.2)] rounded bg-white hover:bg-purple-50 transition-colors duration-150"

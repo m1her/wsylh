@@ -36,7 +36,7 @@ export const HeroSection = () => {
         <div className="fadeIn w-full h-full flex items-center justify-center relative">
           <Image
             src={"/teachIllustrations.svg"}
-            alt={"Illustration"}
+            alt={"Teacher Illustration"}
             width={400}
             height={400}
           />
