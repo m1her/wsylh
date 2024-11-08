@@ -8,11 +8,11 @@ export const SubscriptionSection = () => {
   return (
     <div className="grid xl:grid-cols-3 grid-cols-1 h-full items-start gap-8 xl:w-full">
       <div className="animate-soonSubCard xl:order-1 order-2 h-full flex flex-col items-center-center relative shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg flex-shrink-0">
-        <div className="absolute select-none top-3 -end-12 bg-white text-accent text-2xl font-semibold z-20 text-center px-16 py-3 rounded shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] -rotate-45">
-          قريبا
-        </div>
         <div className="absolute top-0 start-0 w-full h-full bg-gray-700/40 rounded-lg z-10"></div>
-        <div className="w-full flex flex-col items-center md:gap-8 gap-4 bg-gradient-to-br from-secondary to-[#5244e8] rounded-t-lg p-8">
+        <div className="w-full flex flex-col items-center md:gap-8 gap-4 bg-gradient-to-br from-secondary to-[#5244e8] rounded-t-lg p-8 relative overflow-hidden">
+          <div className="absolute select-none top-3 -end-12 bg-white text-accent text-2xl font-semibold z-20 text-center px-16 py-3 rounded shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] -rotate-45">
+            قريبا
+          </div>
           <div className="w-0 h-0 border-l-[80px] border-r-[80px] border-t-[40px] border-transparent border-t-white"></div>
           <div className="md:text-5xl text-4xl font-light text-white -mt-2 flex justify-between items-end w-full">
             <div>الأساسية</div>
@@ -61,11 +61,11 @@ export const SubscriptionSection = () => {
         </div>
       </div>
       <div className="animate-soonSubCard order-3 h-full flex flex-col items-center-center relative shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] rounded-lg flex-shrink-0">
-        <div className="absolute select-none top-3 -end-12 bg-white text-accent text-2xl font-semibold z-20 text-center px-16 py-3 rounded shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] -rotate-45">
-          قريبا
-        </div>
         <div className="absolute top-0 start-0 w-full h-full bg-gray-700/40 rounded-lg z-10"></div>
-        <div className="w-full flex flex-col items-center md:gap-8 gap-4 bg-gradient-to-br from-[#ff5b5b] to-[#ec813e] rounded-t-lg p-8">
+        <div className="overflow-hidden w-full flex flex-col items-center md:gap-8 gap-4 bg-gradient-to-br from-[#ff5b5b] to-[#ec813e] rounded-t-lg p-8 relative">
+          <div className="absolute select-none top-3 -end-12 bg-white text-accent text-2xl font-semibold z-20 text-center px-16 py-3 rounded shadow-[0_0_10px_5px_rgba(0,0,0,0.2)] -rotate-45">
+            قريبا
+          </div>
           <div className="w-0 h-0 border-l-[80px] border-r-[80px] border-t-[40px] border-transparent border-t-white"></div>
           <div className="md:text-5xl text-4xl font-light text-white -mt-2 flex justify-between items-end w-full">
             <div>الذهبية</div>
