@@ -31,7 +31,7 @@ export const ServicesSlider = () => {
       id="SERVICES_SLIDER"
       className="w-full bg-gray-100 flex flex-col items-center gap-6 md:py-16 py-12 md:px-14 px-10"
     >
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-6 text-center">
         <div className="md:text-4xl text-3xl font-semibold">وسيلة</div>
         <div className="md:text-3xl text-2xl font-semibold">
           نظام الاختبارات الورقية المتكامل

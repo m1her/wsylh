@@ -28,7 +28,7 @@ export const TextPopup = ({
       </div>
       {isOpen && (
         <>
-          <div className="absolute w-[400px] flex flex-col gap-1 text-xs top-8 start-0 z-50 shadow-[0_0_7px_-1px_rgba(0,0,0,0.2)] p-4 bg-white border border-gray-500 rounded-lg">
+          <div className="absolute md:w-[400px] w-[300px] flex flex-col gap-1 text-xs top-8 start-0 z-50 shadow-[0_0_7px_-1px_rgba(0,0,0,0.2)] p-4 bg-white border border-gray-500 rounded-lg">
             {text.map((item, idx) => (
               <p key={idx}>{item}</p>
             ))}
