@@ -1,0 +1,14 @@
+.services-bg {
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 100%);
+  animation: tilt 5s ease-in-out infinite;
+}
+
+@keyframes tilt {
+  0%,
+  100% {
+    clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 90%);
+  }
+  50% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 80%, 0 100%);
+  }
+}

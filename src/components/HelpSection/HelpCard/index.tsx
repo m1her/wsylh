@@ -16,6 +16,7 @@ export const HelpCard = ({
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const cardRefCur = cardRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -28,7 +29,7 @@ export const HelpCard = ({
     if (cardRef.current) observer.observe(cardRef.current);
 
     return () => {
-      if (cardRef.current) observer.unobserve(cardRef.current);
+      if (cardRefCur) observer.unobserve(cardRefCur);
     };
   }, []);
 
