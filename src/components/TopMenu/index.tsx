@@ -81,7 +81,7 @@ export const TopMenu = () => {
             <LoginIcon className="w-5 stroke-black group-hover:stroke-white transition-colors duration-150" />
           </Link>
           <Link
-            href=""
+            href="/subscription"
             className="flex whitespace-nowrap items-center gap-x-2 md:px-6 px-4 md:py-3 py-2 bg-primary text-white font-semibold hover:bg-[#2a3a76] rounded-md text-sm transition-colors duration-150"
           >
             للإشتراك

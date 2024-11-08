@@ -18,6 +18,10 @@ import { UserIcon } from "./User";
 import { PlusIcon } from "./Plus";
 import { SaudiBC } from "./SaudiBC";
 import { StarIcon } from "./Star";
+import { CheckCircle } from "./CheckCircle";
+import { InstagramIcon } from "./Brands/Instagram";
+import { XTwitterICon } from "./Brands/XTwitter";
+import { TelephoneICon } from "./Telephone";
 
 export {
   AddUserIcon,
@@ -40,4 +44,8 @@ export {
   ApplePayIcon,
   SaudiBC,
   StarIcon,
+  CheckCircle,
+  InstagramIcon,
+  XTwitterICon,
+  TelephoneICon,
 };

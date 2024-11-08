@@ -6,9 +6,11 @@ import {
   ApplePayIcon,
   AppStoreIcon,
   GooglePlayIcon,
+  InstagramIcon,
   MadaIcon,
   SaudiBC,
   VisaIcon,
+  XTwitterICon,
 } from "../AnimatedIcons";
 import { TextPopup } from "./TextPopup";
 import { footerData } from "./footerData";
@@ -107,6 +109,25 @@ export const Footer = () => {
                 />
               </Link>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-full flex items-start ">
+        <div className="flex flex-col items-center">
+          <div className="text-gray-700 text-lg font-semibold">تابعنا على</div>
+          <div className="flex items-center gap-1">
+            <Link
+              className="w-7 h-7 rounded-full bg-gray-500 hover:bg-gray-600 flex items-center justify-center"
+              href={"https://x.com/wsyl147686"}
+            >
+              <XTwitterICon className="w-4 h-4 fill-white" />
+            </Link>
+            <Link
+              className="w-7 h-7 rounded-full bg-gray-500 hover:bg-gray-600 flex items-center justify-center"
+              href={"https://www.instagram.com/wsyelh/"}
+            >
+              <InstagramIcon className="w-4 h-4 fill-white" />
+            </Link>
           </div>
         </div>
       </div>

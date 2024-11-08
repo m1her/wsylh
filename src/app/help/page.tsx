@@ -1,4 +1,8 @@
-import { MessagesIcon, PlayIcon, UserIcon } from "@/components/AnimatedIcons";
+import {
+  MessagesIcon,
+  PlayIcon,
+  TelephoneICon,
+} from "@/components/AnimatedIcons";
 import { HelpSection } from "@/components/HelpSection";
 import Link from "next/link";
 import React from "react";
@@ -17,12 +21,15 @@ const Help = () => {
         </div>
         <div className="md:flex grid grid-cols-2 items-center md:gap-4 gap-2">
           <Link
-            href={"/"}
+            target="_blank"
+            href={
+              "https://api.whatsapp.com/send/?phone=966553576290&text&type=phone_number&app_absent=0"
+            }
             className="lg:w-72 lg:h-72 md:w-52 md:h-52 w-28 h-28 bg-white hover:bg-[#fdfdff] hover:scale-[1.02] transition-all duration-150 flex flex-col md:gap-4 gap-1 items-center justify-center rounded-lg border border-gray-300 shadow-[0_0_10px_5px_rgba(0,0,0,0.1)]"
           >
-            <UserIcon className="lg:w-24 lg:h-24 md:w-16 md:h-16 w-8 h-8 fill-secondary" />
+            <TelephoneICon className="lg:w-24 lg:h-24 md:w-16 md:h-16 w-8 h-8 fill-secondary" />
             <p className="font-semibold lg:text-2xl md:text-xl text-sm">
-              من نحن
+              الدعم الفني
             </p>
           </Link>
           <Link
