@@ -1,11 +1,10 @@
 import { SubscriptionSection } from "@/components/SubscriptionSection";
-import Link from "next/link";
 import React from "react";
 
 const Subscription = () => {
   return (
     <div className=" bg-gray-50 flex flex-col items-center gap-6 relative">
-      <div className="w-full md:px-14 px-10 md:pt-12 pt-10 md:pb-52 pb-16 bg-gradient-to-b from-primary to-secondary text-center bg-cover bg-center flex flex-col items-center gap-6">
+      <div className="w-full md:px-14 px-10 md:pt-12 pt-10 md:pb-52 pb-48 bg-gradient-to-b from-primary to-secondary text-center bg-cover bg-center flex flex-col items-center gap-6">
         <div className="text-white font-semibold md:text-3xl text-2xl">
           استثمر وقتك في تعليم طلابك، ودع &quot;إعداد الاختبارات&quot; يتولى
           الباقي!
