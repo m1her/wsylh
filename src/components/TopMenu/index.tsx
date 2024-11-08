@@ -30,7 +30,7 @@ export const TopMenu = () => {
           width={150}
           height={100}
           alt={"Website Logo"}
-          className="z-50 md:w-[150px] w-36"
+          className="z-50 md:w-[150px] w-36 md:h-auto h-auto"
           priority
         />
       </div>

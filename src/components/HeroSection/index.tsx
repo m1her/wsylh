@@ -13,8 +13,9 @@ export const HeroSection = () => {
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full h-full gap-x-8 gap-y-24 md:py-20 py-16">
         <div className="w-full h-full flex flex-col gap-y-6 justify-center text-white relative">
           <p
-            className="title font-kufi font-bold md:text-5xl text-4xl"
+            className="title font-kufi font-bold md:text-5xl text-4xl font-display-swap"
             style={{ lineHeight: "60px" }}
+          
           >
             سهّل إعداد اختباراتك باحترافية تامة
           </p>
@@ -39,6 +40,8 @@ export const HeroSection = () => {
             alt={"Teacher Illustration"}
             width={400}
             height={400}
+            priority
+            loading="eager"
           />
           <div className="clock w-32 h-32 aspect-square bg-secondary rounded-full absolute top-0 right-0 flex items-center justify-center">
             <ClockIcon className="w-10 h-10" />
