@@ -2,26 +2,26 @@ export const servicesSliderData = [
   {
     title: "إعدادات الأسئلة",
     text: "في كل فقرة يمكنك تحديد نمط الأسئلة ، وعدد الاسئلة حسب الصعوبة ومجموع الاسئلة ، ومفاتيح الإجابات ، والدرجة والوحدات والدروس",
-    imageHref: "/questionSetting.jpg",
+    imageHref: "/questionSetting.webp",
   },
   {
     title: "إعدادات الإختبار",
     text: "تستطيع تحديد عنوان الإختبار ، والصف ، الفصل الدراسي،والوحدات الدراسية، وعدد فقرات كل اختبار",
-    imageHref: "/testSettings.jpg",
+    imageHref: "/testSettings.webp",
   },
   {
     title: "الإختبارات السابقة",
     text: "سيكون لديك قائمة بكل الإختبارات التي قمت بإعدادها سابقا ويمكنك التعديل عليها أو حذفها أو طباعتها أو إرسالها للطلاب",
-    imageHref: "/prevTests.jpg",
+    imageHref: "/prevTests.webp",
   },
   {
     title: "الطباعة والمعاينة",
     text: "بعد إعداد النموذج، يمكنك التعديل بحذف أو إضافة أسئلة جديدة، ثم طباعة نموذجين: واحد للأسئلة وآخر للإجابات",
-    imageHref: "/printer.jpg",
+    imageHref: "/printer.webp",
   },
   {
     title: "إعدادات الترويسة",
     text: "اختيار الكليشة أو ( الترويسة ) للإختبار سواء شهري أو نهائي وإعداده على حسب رغبة المعلم",
-    imageHref: "/headerEdit.jpg",
+    imageHref: "/headerEdit.webp",
   },
 ];
