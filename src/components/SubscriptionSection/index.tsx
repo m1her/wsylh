@@ -25,10 +25,10 @@ export const SubscriptionSection = () => {
             إشترك الآن
           </Link>
         </div>
-        <div className="h-full border-2 bg-white border-[#5244e8] rounded-b-lg md:p-8 p-4 xl:scale-90 !scale-100 flex flex-col gap-2 items-start">
+        <div className="flex-1 border-2 bg-white border-[#5244e8] rounded-b-lg md:p-8 p-4 xl:scale-90 !scale-100 flex flex-col gap-2 items-start">
           {standardData.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-2">
-              <CheckCircle className="stroke-green-500 w-7 h-7" />
+            <div key={idx} className="flex items-start gap-2">
+              <CheckCircle className="stroke-green-500 w-7 h-7 flex-shrink-0" />
               <div className="text-gray-600 font-medium text-lg">{item}</div>
             </div>
           ))}
@@ -51,10 +51,10 @@ export const SubscriptionSection = () => {
             إشترك الآن
           </Link>
         </div>
-        <div className="h-full border-2 bg-white border-primary rounded-b-lg md:p-8 p-4 flex flex-col gap-2 items-start">
+        <div className="flex-1 border-2 bg-white border-primary rounded-b-lg md:p-8 p-4 flex flex-col gap-2 items-start">
           {silverData.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-2">
-              <CheckCircle className="stroke-green-500 w-7 h-7" />
+            <div key={idx} className="flex items-start gap-2">
+              <CheckCircle className="stroke-green-500 w-7 h-7 flex-shrink-0" />
               <div className="text-gray-600 font-medium text-lg">{item}</div>
             </div>
           ))}
@@ -78,10 +78,10 @@ export const SubscriptionSection = () => {
             إشترك الآن
           </Link>
         </div>
-        <div className="border-2 bg-white border-[#cf4747] rounded-b-lg md:p-8 p-4 flex flex-col gap-2 items-start">
+        <div className="flex-1 border-2 bg-white border-[#cf4747] rounded-b-lg md:p-8 p-4 flex flex-col gap-2 items-start">
           {goldenData.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-2">
-              <CheckCircle className="stroke-green-500 w-7 h-7" />
+            <div key={idx} className="flex items-start gap-2">
+              <CheckCircle className="stroke-green-500 w-7 h-7 flex-shrink-0" />
               <div className="text-gray-600 font-medium text-lg">{item}</div>
             </div>
           ))}
